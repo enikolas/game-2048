@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "webpack --config webpack.prod.js",
+    "build-analyse": "webpack --config webpack.prod.js --profile --json > stats.json",
     "start": "webpack-dev-server --config webpack.dev.js",
     "lint": "eslint --ext .js,.vue src"
   },
